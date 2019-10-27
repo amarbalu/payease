@@ -32,7 +32,7 @@ const Transaction=(props)=>{
     function onChangeValues(event){
       switch(event.target.id){
         case "upiId":
-          if(event.target.value && /^[0-9A-Za-z]*$/g.test(event.target.value)){
+          if(event.target.value && /^[0-9A-Za-z@]*$/g.test(event.target.value)){
             setUpiId(event.target.value.toLowerCase())
           }else{
             setUpiId("")
@@ -98,7 +98,7 @@ const Transaction=(props)=>{
           <Form.Item>
             <Button type="primary" htmlType="submit" className="login-form-button"
             >
-              <a href={`upi://pay?pa=${upiId}&tr=kdahskjahRRRRRs27595fsdfasdas&am=${amount}&mam=null&cu=INR`}
+              <a href={`upi://pay?pa=${upiId}&&pn=nivi%20balu&&tr=kdahskjahRRRRRs27595fsdfasdas&am=${amount}&mam=null&cu=INR`}
               >
 
               Pay
