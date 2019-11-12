@@ -98,8 +98,8 @@ const Transaction=(props)=>{
           <Form.Item>
             <Button type="primary" htmlType="submit" className="login-form-button"
             >
-              <a href={`upi://pay?pa=${upiId}&&pn=nivi%20balu&&tr=kdahskjahRRRRRs27595fsdfasdas&am=${amount}&mam=null&cu=INR`}
-              >
+              <a href={`upi://pay?pa=${upiId}&&pn=nivi%20balu&&tr=kdahskjahRRRRRs27595fsdfasdas&am=${amount}&mam=null&cu=INR?id=com.google.android.apps.nbu.paisa.user
+              `}>
 
               Pay
               </a>
